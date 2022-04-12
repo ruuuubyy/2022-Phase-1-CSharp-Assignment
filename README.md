@@ -24,10 +24,10 @@ The tests in `LibraryService.Tests/LibraryService_Book.cs` should pass after you
 
 There are a total of 2 tests that fail in the `LibraryService_Book.cs` file.
 
-Helpful details:
-* A book can only be borrowed to a person if the book is available.
-* A book can only be returned by the person who borrowed it.
-* A book can only be borrowed to a single person.
+> Helpful details:
+> * A book can only be borrowed to a person if the book is available.
+> * A book can only be returned by the person who borrowed it.
+> * A book can only be borrowed to a single person.
 
 ### Exercise 2:
 
