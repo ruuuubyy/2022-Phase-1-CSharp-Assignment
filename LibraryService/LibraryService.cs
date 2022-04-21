@@ -49,13 +49,13 @@ public sealed class LibraryService : ILibraryService
     public void BorrowItem(string id, Person borrower)
     {
         var itemById = _items.Find(x => x.Id == id);
-        if (itemById != null)
+        if (itemById == null)
         {
-            itemById.BorrowItem(borrower);
+            throw new InvalidOperationException();
         }
         else
         {
-            throw new InvalidOperationException();
+            itemById.BorrowItem(borrower);
         }
     }
 
